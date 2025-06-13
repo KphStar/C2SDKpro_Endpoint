@@ -1,0 +1,49 @@
+{
+  "name": "event-notification-nodejs-sdk",
+  "version": "1.0.4",
+  "description": "A Node.js SDK for processing eBay event notifications via secure webhook endpoints",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eBay/event-notification-nodejs-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eBay/event-notification-nodejs-sdk/issues"
+  },
+  "homepage": "https://github.com/eBay/event-notification-nodejs-sdk#readme",
+  "scripts": {
+    "start": "node Main/Endpoint.js",
+    "test": "eslint . && mocha"
+  },
+  "keywords": [
+    "eBay",
+    "webhook",
+    "Event Notification",
+    "SDK",
+    "Endpoint Validation",
+    "signature verification"
+  ],
+  "author": "Lokesh Rishi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^16.5.0",
+    "ebay-oauth-nodejs-client": "^1.2.1",
+    "express": "^4.18.2",
+    "lru-cache": "^6.0.0"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.19.0",
+    "chai": "^4.3.4",
+    "eslint": "^6.8.0",
+    "eslint-config-ebay": "^1.1.1",
+    "mocha": "^10.2.0",
+    "nock": "^13.0.11",
+    "nodemon": "^2.0.22"
+  },
+  "directories": {
+    "example": "Config",
+    "lib": "lib",
+    "test": "test"
+  }
+}
